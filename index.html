@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="javascript/javascript.js"></script>
+
+    <title>Formulário bonito</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="box">
+
+        <div class="users">
+          <div class="user">
+            <img src="images/dashboard_placeholder.png" onclick="selecionerUsuario()">
+            <p id="nomeUsuario" class="nomeUsuario">Fecola</p>
+          </div>
+        </div>        
+
+        <fieldset class="fieldset">
+          <legend class="legend">LOGIN</legend>
+
+          <form action="">
+            <label for="login" class="label">Usuário:</label> <br />
+            <input
+              type="text"
+              id="login"
+              name="login"
+              aria-label="nome de usuário"
+              placeholder="Usuário de acesso"
+              required
+              autofocus
+            />
+  
+            <br /><br />
+  
+            <label for="pass" class="label">Senha:</label> <br />
+            <input
+              type="password"
+              id="pass"
+              name="password"
+              aria-label="senha de acesso"
+              placeholder="Digite sua senha"
+              required
+            />
+  
+            <br><br>
+  
+            <div class="botoes">
+              <button type="submit" class="botao botaoIn">Acessar</button>
+              <button type="button" class="botao botaoUp">Criar conta</button>
+            </div>
+
+          </form>
+
+        </fieldset>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

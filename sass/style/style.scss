@@ -1,0 +1,132 @@
+@import "../colors/colors.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 20%;
+    background-color: rgba(75, 74, 74, 0.103);
+    border-radius: 15px;
+    padding: 50px;
+    gap: 30px;
+
+    .users {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .user {
+            display: flex;
+            flex-direction: column;    
+            padding: 10px;
+            transition: 0.3;
+
+            p {
+                color: $amarela;
+                font-size: 0.9em;
+                text-align: center;
+            }
+        }
+    }
+
+    img {
+        width: 60px;
+        cursor: pointer;
+    }
+
+    .user:hover {
+        transition: 0.3s;
+        border: 1px solid $amarela;
+        border-radius: 8px;
+    }
+    
+    .fieldset {
+        padding: 20px;
+        color: $amarela;
+        border-radius: 15px;
+    }
+
+    .legend {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .label {
+        color: $amarela;
+    }
+
+    .botao {
+        padding: 8px;
+        border: 1.5px solid;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    .botaoIn {
+        color: $verde;
+    }
+    
+    .botaoIn:hover {
+        color: black;
+        border: 1px solid black;
+        transition: 0.5s;
+        background-color: $verde;
+    }
+
+    .botaoUp {
+        color: $amarela;
+    }
+    
+    .botaoUp:hover {
+        color: black;
+        border: 1px solid black;
+        transition: 0.5s;
+        background-color: $amarela;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+    input[type=text], input[type=password] {
+        padding: 8px;
+        background-color: rgba(88, 86, 86, 0.212);
+        outline: none;
+        border: 0;
+        border-radius: 8px;
+        color: white;
+        transition: 0.8s;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+        transition: 0.8s;
+        border-bottom: 1px solid $amarela;
+    }
+
+}

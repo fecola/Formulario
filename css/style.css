@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../images/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 20%;
+  background-color: rgba(75, 74, 74, 0.103);
+  border-radius: 15px;
+  padding: 50px;
+  gap: 30px;
+}
+.box .users {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.box .users .user {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: 0.3;
+}
+.box .users .user p {
+  color: rgb(255, 251, 0);
+  font-size: 0.9em;
+  text-align: center;
+}
+.box img {
+  width: 60px;
+  cursor: pointer;
+}
+.box .user:hover {
+  transition: 0.3s;
+  border: 1px solid rgb(255, 251, 0);
+  border-radius: 8px;
+}
+.box .fieldset {
+  padding: 20px;
+  color: rgb(255, 251, 0);
+  border-radius: 15px;
+}
+.box .legend {
+  padding: 10px;
+  text-align: center;
+}
+.box .label {
+  color: rgb(255, 251, 0);
+}
+.box .botao {
+  padding: 8px;
+  border: 1.5px solid;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.box .botaoIn {
+  color: rgb(34, 248, 98);
+}
+.box .botaoIn:hover {
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  background-color: rgb(34, 248, 98);
+}
+.box .botaoUp {
+  color: rgb(255, 251, 0);
+}
+.box .botaoUp:hover {
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  background-color: rgb(255, 251, 0);
+}
+.box .botoes {
+  display: flex;
+  justify-content: space-around;
+}
+.box input[type=text], .box input[type=password] {
+  padding: 8px;
+  background-color: rgba(88, 86, 86, 0.212);
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  transition: 0.8s;
+}
+.box input[type=text]:focus, .box input[type=password]:focus {
+  transition: 0.8s;
+  border-bottom: 1px solid rgb(255, 251, 0);
+}
+
+/*# sourceMappingURL=style.css.map */
